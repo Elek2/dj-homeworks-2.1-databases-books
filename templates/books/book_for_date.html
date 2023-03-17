@@ -18,11 +18,11 @@
         </div>
 
         {%if prev_date%}
-        <p>Раньше: <a href="{% url 'date_book' prev_date%}">{{prev_date|date:'Y-m-d'}}</a> </p>
+        <p>Предыдущая: <a href="{% url 'date_book' prev_date%}">{{prev_date|date:'Y-m-d'}}</a> </p>
         {%endif%}
 
         {%if next_date%}
-        <p>Позже: <a href="{% url 'date_book' next_date%}">{{next_date|date:'Y-m-d'}}</a> </p>
+        <p>Следующая: <a href="{% url 'date_book' next_date%}">{{next_date|date:'Y-m-d'}}</a> </p>
         {% endif %}
     </div>
 {% endblock %}

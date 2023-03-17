@@ -12,7 +12,6 @@ class Command(BaseCommand):
         with open('fixtures/books.json', 'r', encoding='UTF-8') as file:
             books_file = json.load(file)
 
-
         for _book in books_file:
             b = Book(
                 name=_book['fields']['name'],
